@@ -1,4 +1,5 @@
 import csv
+# 1) Να βαλετε το περιεχομενο το csv σε μια λιστα απο λεξικα
 csvPath = './sales.csv'
 def read_data(data_file):
     data=[]
@@ -16,6 +17,7 @@ def read_data(data_file):
 x=read_data(csvPath)
 # print(x)
 
+# 2) Να βρειτε την πιο κερδοφορα μερα(ημερομηνία)
 def profitable_day(data):
     days_max=[]
     maxSale=0
@@ -38,6 +40,7 @@ def profitable_day(data):
 
 profitable_day(x)     
 
+# 3) Να βρειτε τον μεσωνια την τιμη των προϊν
 def average_prices(data):
     products_avgs=[]
     uniqueProducts= set()
@@ -59,6 +62,7 @@ def average_prices(data):
 
 average_prices(x)
 
+# 4) Να βρειτε το πιο κερδοφορο και τον πιο χαμηλο προϊον σε πωλησεις.
 def min_max_sales(data):
     products_total_sales=[]
     uniqueProducts= set()
